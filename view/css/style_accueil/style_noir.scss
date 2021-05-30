@@ -1,0 +1,305 @@
+@import 'style_default';
+
+body {
+	background-color: black !important;
+	color: white !important;
+}
+
+.right {
+	border-left: 1px solid #2f3336;
+}
+
+.right_ {
+	border-left: 1px solid #2f3336;
+}
+
+.left {
+	border-right: 1px solid #2f3336;
+}
+/* _ LEFT COLUMN _______________________________________________________________________________________________________ */
+
+.menu {
+	color: white;
+	.accueil_ {
+		.logo_accueil {
+			background-image: url(../assets/icones_boutons_accueil/accueil_noir.png);
+		}
+		a {
+			color: white;
+		}
+		&:hover {
+			.logo_accueil {
+				background-image: url(../assets/icones_boutons_accueil/acceuil/accueil_hover.png);
+			}
+
+			background-color: #061019;
+		}
+	}
+	.messages {
+		.logo_messages {
+			background-image: url(../assets/icones_boutons_accueil/message_noir.png);
+		}
+		a {
+			color: white;
+		}
+		&:hover {
+			.logo_messages {
+				background-image: url(../assets/icones_boutons_accueil/messagerie/message_hover.png);
+			}
+			background-color: #061019;
+		}
+	}
+	.profil {
+		.logo_profil {
+			background-image: url(../assets/icones_boutons_accueil/profil_noir.png);
+		}
+		a {
+			color: white;
+		}
+		&:hover {
+			.logo_profil {
+				background-image: url(../assets/icones_boutons_accueil/profil/profil_hover.png);
+			}
+			background-color: #061019;
+		}
+	}
+	.parametre {
+		.logo_parametre {
+			background-image: url(../assets/icones_boutons_accueil/parametre_noir.png);
+		}
+		a {
+			color: white;
+		}
+		&:hover {
+			.logo_parametre {
+				background-image: url(../assets/icones_boutons_accueil/parametres/parametre_active.png);
+			}
+
+			background-color: #061019;
+		}
+	}
+}
+/* _ MIDDLE COLUMN _______________________________________________________________________________________________________ */
+.accueil {
+	background-color: black;
+	border-bottom: 1px solid #2f3336;
+}
+
+.quoi_de_neuf {
+	.quoi_de_neuf_header {
+		textarea {
+			background-color: black;
+			color: white;
+			&:focus {
+				border-bottom: 1px solid #2f3336;
+			}
+		}
+	}
+}
+
+.separateur {
+	background-color: #16181c;
+	border-top: 1px solid #2f3336;
+	border-bottom: 1px solid #2f3336;
+}
+
+.container {
+	border-bottom: 1px solid #2f3336;
+	.container_body {
+		border-bottom: 1px solid #2f3336;
+	}
+	.container_footer {
+		.jsp {
+			border-bottom: 1px solid #2f3336;
+		}
+	}
+}
+.account_style {
+	border: 1px solid #2f3336;
+}
+
+.container_header_ {
+	.photo_profil {
+		border: 5px solid black;
+	}
+}
+.container_footer_ {
+	.tab-list {
+		border-bottom: 1px solid #2f3336;
+
+		> li {
+			&:hover {
+				background-color: #061019;
+			}
+		}
+	}
+}
+
+.wrapper4 {
+	.reponse {
+		textarea {
+			border: 1px solid #2f3336;
+			background-color: #061019;
+			resize: none;
+			color: white;
+		}
+		::placeholder {
+			color: white;
+		}
+		.icon_response {
+			background-image: url(../assets/response_white.png);
+		}
+	}
+}
+.wrapper5 {
+	.container_reply {
+		background-color: #061019;
+		border: 1px solid #2f3336;
+		.container_body {
+			border: none;
+		}
+	}
+	.icone_reponse {
+		background-image: url(../assets/response_white.png);
+	}
+}
+
+.nav_responsive {
+	.accueil_responsive {
+		background-image: url(../assets/icones_boutons_accueil/accueil_noir.png);
+	}
+	.profil_responsive {
+		background-image: url(../assets/icones_boutons_accueil/profil_noir.png);
+	}
+	.message_responsive {
+		background-image: url(../assets/icones_boutons_accueil/message_noir.png);
+	}
+	.parametre_responsive {
+		background-image: url(../assets/icones_boutons_accueil/parametre_noir.png);
+		&:hover {
+			background-image: url(../assets/icones_boutons_accueil/parametres/parametre_active.png);
+		}
+	}
+}
+
+/* _ COLUMN RIGHT ______________________________________________________________________ */
+
+.recherche_ {
+	background-color: #212327;
+
+	input {
+		background-color: #212327;
+		color: white;
+	}
+}
+
+/* _ MODAL PROFIL  ______________________________________________________________________ */
+
+.modal_edit_profil {
+	.modal_content {
+		background-color: black;
+		.modal_body {
+			::placeholder {
+				color: white;
+			}
+			input {
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+}
+
+/* _ RESPONSIVE  ______________________________________________________________________ */
+
+@media screen and (max-width: 1000px) {
+	.left {
+		display: none;
+	}
+	.right {
+		display: none;
+	}
+	.middle {
+		width: 100%;
+	}
+	.container {
+		margin-bottom: 30px;
+	}
+	.nav_responsive {
+		display: flex;
+		width: 100%;
+		background-color: black;
+		border-top: 1px solid #2f3336;
+	}
+}
+
+/* _ MODAL PARAMETRES  ______________________________________________________________________ */
+
+.modal_edit_parametres {
+	.modal_content {
+		background-color: black;
+		.modal_body {
+			::placeholder {
+				color: white;
+			}
+			input {
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+}
+
+.modal_desactivation {
+	.modal_content {
+		background-color: black;
+		.modal_body {
+			::placeholder {
+				color: white;
+			}
+			input {
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+}
+
+.modal_desactivation {
+	.modal_content {
+		background-color: black;
+		.modal_body {
+			::placeholder {
+				color: white;
+			}
+			input {
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+}
+
+/* _ MESSAGERIE  ______________________________________________________________________ */
+
+.blockFormMsg {
+	form {
+		#to {
+			background-color: #212327;
+			color: white;
+			border: 1px solid #2f3336;
+			&::placeholder {
+				color: white;
+			}
+		}
+
+		#contenu {
+			background-color: #212327;
+			color: white;
+			border: 1px solid #2f3336;
+			&::placeholder {
+				color: white;
+			}
+		}
+	}
+}

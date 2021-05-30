@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Tweet academie messagerie privé</title>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/style_accueil/style_default.css" />
+		<link rel="stylesheet" href="../css/style_recherche/style_pages.css" />
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="column left">
+				<div class="menu">
+					<div class="twitter"></div>
+					<div class="accueil_">
+						<a href="./accueil.html"><div class="logo_accueil"></div></a>
+						<a href="./accueil.html">Accueil</a>
+					</div>
+					<div class="messages">
+						<a href="./message.html"><div class="logo_messages"></div></a>
+						<a href="./message.html">Messages</a>
+					</div>
+					<div class="profil">
+						<a href="./profil.html"><div class="logo_profil"></div></a>
+						<a href="profil.html">Profil</a>
+					</div>
+					<div class="parametre">
+						<a href="./parametre.html"><div class="logo_parametre"></div></a>
+						<a href="parametre.html">Paramètres</a>
+					</div>
+					<div class="tweeter_">
+						<input type="button" value="Tweeter" />
+					</div>
+				</div>
+			</div>
+			<div class="column middle">
+				<div class="accueil">
+					<p>Messages privés</p>
+				</div>
+				<div id="res"></div>
+				<div class="blockFormMsg">
+					<form action="" id="formMsg" method="POST">
+						<label for="to"></label><input type="text" id="to" placeholder="Message à" autofocus />
+						<label for="contenu"></label><textarea id="contenu" placeholder="Votre contenu &#128008;"></textarea>
+						<input type="submit" id="submit" value="Envoyer" />
+					</form>
+				</div>
+				<div id="chat"></div>
+				<div class="nav_responsive">
+					<div class="accueil_responsive"></div>
+					<div class="profil_responsive"></div>
+					<div class="message_responsive"></div>
+					<div class="parametre_responsive"></div>
+				</div>
+			</div>
+			<div class="column right">
+				<div class="recherche_">
+					<div class="logo_recherche"></div>
+					<div class="input_recherche">
+						<form action="../../controller/checkResult.php" method="POST">
+							<label>
+								<input type="text" name="recherche" placeholder="Recherche Twitter" />
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../script/account_style.js"></script>
+		<script src="../script/messages.js"></script>
+		<script src="../script/recherche.js"></script>
+		<script src="../script/responsive_nav.js"></script>
+	</body>
+</html>
